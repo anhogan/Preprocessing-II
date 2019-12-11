@@ -14,10 +14,24 @@ nav {
     width: 800px;
     height: 15vh;
 
+    @media @mobile {
+      flex-direction: column;
+
+      h1 {
+        margin: 2%;
+      }
+    }
+
     .nav-items {
       width: 80%;
       display: flex;
       justify-content: flex-end;
+
+      @media @mobile {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 2%;
+      }
 
       a {
         text-decoration: none;
