@@ -1,1 +1,30 @@
 // Navigation Styles here
+nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px dashed @navigation-border;
+  width: 100%;
+  height: 15vh;
+  margin: 0 auto;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 15vh;
+
+    .nav-items {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.6rem;
+        margin: 0 3%;
+      }
+    }
+  }
+}
