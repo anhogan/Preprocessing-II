@@ -1,1 +1,14 @@
 // Mixins in here
+
+.buttonStyle(@bgcolor, @textcolor, @justify, @align) {
+  background: @bgcolor;
+  color: @textcolor;
+  width: 80%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  font-size: 1.6rem;
+}

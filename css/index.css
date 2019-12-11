@@ -271,3 +271,15 @@ nav .navbar .nav-items a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  background: #17A2B8;
+  color: #FFFFFF;
+  width: 80%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
