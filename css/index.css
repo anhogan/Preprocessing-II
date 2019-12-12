@@ -390,17 +390,42 @@ nav .navbar .nav-items a:hover {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .form form {
+    flex-direction: column;
+  }
+}
 .form form .packages {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .form form .packages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .form form .packages p {
   width: 60%;
   margin: 0 auto;
   display: inline;
 }
+@media (max-width: 500px) {
+  .form form .packages p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+}
 .form form .packages input {
   color: #212529;
   margin: 15% 5%;
+}
+@media (max-width: 500px) {
+  .form form .packages input {
+    text-align: center;
+  }
 }
 .form form .userinput {
   width: 100%;
@@ -410,6 +435,11 @@ nav .navbar .nav-items a:hover {
   font-size: 1.4rem;
   margin: 2% 0 0 0;
   padding: 0;
+}
+@media (max-width: 500px) {
+  .form form .userinput p {
+    text-align: center;
+  }
 }
 .form form .userinput input {
   width: 100%;
