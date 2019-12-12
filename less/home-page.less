@@ -126,6 +126,17 @@
 
     .btn {
       .buttonStyle(@button-bg, @main-bg, center, center);
+      // animation: @buttonColor 3s linear 2s infinite alternate both;
+
+      &:hover {
+        cursor: pointer;
+        background: @sandy-beach;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
       @media @mobile {
         width: 100%;

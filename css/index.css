@@ -1,3 +1,11 @@
+@button Color {
+  from {
+    background: #17A2B8;
+  }
+  to {
+    background: #FFEBCD;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -209,6 +217,9 @@ nav .navbar .nav-items a {
   font-size: 1.6rem;
   margin: 0 3%;
 }
+nav .navbar .nav-items a:hover {
+  cursor: pointer;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -355,9 +366,66 @@ nav .navbar .nav-items a {
   align-items: center;
   font-size: 1.6rem;
 }
+.home .content-pick .btn:hover {
+  cursor: pointer;
+  background: #FFEBCD;
+}
+.home .content-pick .btn a {
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .home .content-pick .btn {
     width: 100%;
     margin-bottom: 3%;
   }
+}
+.form {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.form form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form form .packages {
+  width: 50%;
+}
+.form form .packages p {
+  width: 60%;
+  margin: 0 auto;
+  display: inline;
+}
+.form form .packages input {
+  color: #212529;
+  margin: 15% 5%;
+}
+.form form .userinput {
+  width: 100%;
+  margin: 2%;
+}
+.form form .userinput p {
+  font-size: 1.4rem;
+  margin: 2% 0 0 0;
+  padding: 0;
+}
+.form form .userinput input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.form form .userinput .btn {
+  background: #17A2B8;
+  color: #FFFFFF;
+  width: 80%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin: 2% 10%;
 }
